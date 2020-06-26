@@ -5,6 +5,5 @@ app_name = 'medclickapp'
 
 urlpatterns = [
     path('', views.homepage, name='homepage'),
-    path('login/', views.login_page, name='login_page'),
-    path('signup/', views.signup_page, name='signup_page')
+
 ]
