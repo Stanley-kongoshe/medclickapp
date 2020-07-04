@@ -1,7 +1,9 @@
 body {
   background: #fafafa;
-  color: #333333;
+  color: #ffffff;
   margin-top: 5rem;
+  
+
 }
 .content-section {
   background: #ffffff;
@@ -9,4 +11,43 @@ body {
   border: 1px solid #dddddd;
   border-radius: 3px;
   margin-bottom: 20px;
+  width: 500px;
+  height: 500px; 
+  margin-right: 0%; 
+}
+
+.content-section1 {
+  background: #ffffff;
+  padding: 2px 2px;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  width:450px;
+  height: auto; 
+  
+}
+
+small.form-text.text-muted {
+color: wheat !important;
+}
+
+.form-group {
+  align-items: center;
+
+}
+
+img.center {
+    display: block;
+    margin: 0 auto;
+}
+
+form.center {
+    display: block;
+    margin: 0 auto;
+}
+
+.btn btn-outline-info{
+     display: block;
+    margin: 0 auto;
+
 }

@@ -1,22 +1,24 @@
 {% extends 'users/base.html' %} 
 {% load crispy_forms_tags %} 
 {% block content %}
+{% load static %}
 
-<div class="content-section">
-  <form action="" method="POST">
+
+<div class="content-section1" style=  " margin-top: 35px; margin-left: 500px; width: 550px;  background-image: url({% static 'images/healthcare-technology2.jpg' %}); ">
+<img class="center"  src="{% static 'images/mainlogo.png' %}" alt="My image" width="120" height="40" style="padding-top: 5px;"> 
+  <form class="center"  action="" method="POST" style="padding: 4%; color: ffffff; width: 450px;" >
     {% csrf_token %}
-    <fieldset class="form-group">
-      <legend class="border-bottom mb-4">Join Today</legend>
+    <fieldset class="form-group"style="  color: ffffff; margin-top: -12px;">
+      <legend class="border-bottom mb-1" style="text-align: center;">Join Today</legend>
       {{ form|crispy }}
     </fieldset>
-    <div class="form-group">
-      <button class="btn btn-outline-info" type="submit">Sign Up</button>
+    <div class="form-group" style="color: ffffff; margin-left: 40%; margin-top: -18px; margin-bottom: -10px;">
+      <button class="btn btn-outline-info" type="submit"style="color: ffffff; align-items: center;" >Sign Up</button>
     </div>
   </form>
-  <div class="border-top pt-3">
-    <small class="text-muted"
-      >Already have an Account? <a class="ml-2" href="{% url 'login' %}">Sign In</a></small
-    >
+  <div class="border-top pt-2">
+    <small class="text-warning" style= "font-size: 18px; margin-bottom: -10px; padding-left: 70px; ">Already have an Account?
+     <a class="ml-2" href="{% url 'login' %}">Sign In</a></large>
   </div>
 </div>
 {% endblock content %}
